@@ -1,0 +1,27 @@
+{{ if content}}
+    <div class="relative max-w-4xl py-20 mx-auto lg:pt-40 lg:pb-32">
+        <article class="content">
+            <p class="text-lg font-medium text-teal">{{ subtitle }}</p>
+            <h1>{{ content }}</h1>
+        </article>
+    </div>
+{{ /if }}
+
+<div class="max-w-2xl mx-auto mb-20 mt-16 {{ if !content }} lg:mt-36 {{ /if }}">
+    {{ collection:articles limit="3" as="articles" }}
+        {{ articles }}
+            <div class="mb-16">
+                <h2 class="mb-4">
+                    <a href="{{ url }}" class="text-2xl font-bold leading-tight tracking-tight hover:text-teal">
+                        {{ title | widont }}
+                    </a>
+                </h2>
+
+                <p class="text-gray-600">
+                    <span class="text-sm font-medium tracking-widest text-gray-400 uppercase">{{ date }}</span> &mdash;
+                    {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
+                </p>
+            </div>
+        {{ /articles }}
+    {{ /collection:articles }}
+</div>

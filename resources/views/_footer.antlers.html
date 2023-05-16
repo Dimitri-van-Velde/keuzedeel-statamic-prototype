@@ -1,0 +1,10 @@
+<nav class="flex flex-wrap items-center justify-between max-w-7xl py-12 mx-auto lg:py-24">
+    <div class="text-sm">Keuzedeel Statamic Prototype - Dimitri van Velde</div>
+    <div class="flex items-center">
+        {{ settings:social }}
+            <a href="{{ url }}" class="ml-4" aria-label="{{ name }}" rel="noopener">
+                {{ svg :src="icon" class="w-6 h-6 hover:text-teal" }}
+            </a>
+        {{ /settings:social }}
+    </div>
+</nav>

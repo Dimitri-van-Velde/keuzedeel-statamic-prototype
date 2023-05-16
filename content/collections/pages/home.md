@@ -1,0 +1,8 @@
+---
+id: home
+blueprint: home
+title: Home
+template: home
+updated_by: db3f73e6-dd5b-4ae0-83d1-631e96a79b22
+updated_at: 1684243272
+---

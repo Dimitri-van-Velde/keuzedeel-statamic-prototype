@@ -1,0 +1,8 @@
+super: true
+name: Dimitri
+id: db3f73e6-dd5b-4ae0-83d1-631e96a79b22
+password_hash: $2y$10$VYBtSvsJ87APEMfEFt1DQOPB8s4FpdxtINqELshAn33hynW4cAu9y
+preferences:
+  taxonomies:
+    topics:
+      after_save: create_another

@@ -1,0 +1,9 @@
+title: Settings
+data:
+  site_name: 'Keuzedeel Statamic Prototype'
+  social:
+    -
+      id: KNAR1SOf
+      name: Github
+      url: 'https://github.com/Dimitri-van-Velde'
+      icon: site/social-icons/github.svg
